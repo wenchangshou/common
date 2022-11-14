@@ -21,3 +21,6 @@ func GetConsulConfig(host string, port int64, prefix string) (config.Config, err
 	err = conf.Load(consulSource)
 	return conf, err
 }
+func GetMysqlFromConsul(config config.Config, path ...string) *MysqlConfig {
+
+}
